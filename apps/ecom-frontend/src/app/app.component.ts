@@ -2,10 +2,12 @@ import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FaConfig, FaIconComponent, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, FaIconComponent],
+  imports: [RouterModule, FaIconComponent, NavbarComponent, FooterComponent],
   // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'ecom-root',
   templateUrl: './app.component.html',
